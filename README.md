@@ -1,2 +1,3 @@
-# Orange Robotics
-[Link](https://bot2022.github.io)
+# The Official Website for Syracuse Unviersity Orange Robotics Club
+[Link](https://suorangebot.github.io)
+
