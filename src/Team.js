@@ -60,12 +60,14 @@ const team = [
     position: "Mechanical",
     subteam: "Mechanical",
   }, {
+    name: "Luis Santin",
+    position: "Electrical Lead",
+    subteam: "Electrical",
+  }, {
     name: "Zhuowei Zhang",
     position: "Vice President",
     subteam: "Software",
   }, 
-
-
 ]
 
 function Team() {
