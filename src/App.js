@@ -2,7 +2,7 @@ import * as React from 'react';
 import './App.css';
 import ResponsiveAppBar from './ResponsiveAppBar';
 import Footer from './Footer';
-import Team from './Team';
+import Team from './team/Team';
 import Robot from './Robot';
 import Apply from './Apply';
 import { Button, Container, Link, Typography } from '@mui/material';
@@ -101,7 +101,7 @@ function App() {
 
         <div className="App"
           style={{
-            backgroundColor: "#F0FFFF",
+            backgroundColor: "#F5F5F5",
             height: "100%"
           }}  
         >
@@ -119,7 +119,6 @@ function App() {
               <Route path="/Home/Apply" element={renderContent("Apply")} />
             </Routes> */}
 
-          
           <Footer page={page}/>
         </div>
       </BrowserRouter>

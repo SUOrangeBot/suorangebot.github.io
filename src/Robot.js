@@ -9,7 +9,8 @@ function Robot() {
         marginBottom: "20px",
       }}
     >
-      <h1>2022 Season Robot</h1>
+      <h1>Amphitrite</h1>
+      <h4>For 2022 RoboSub</h4>
       <img src={robotImage} alt="Robot" 
         width={"50%"}
       />
@@ -19,8 +20,19 @@ function Robot() {
           About the Robot
         </Typography>
         <Typography variant="body1" textAlign={"left"}>
-        A fully autonomous robot that is expected to submerge into the water and perform a variety of tasks.
+          A fully autonomous robot that is expected to submerge into the water and perform a variety of tasks.
         </Typography>
+        <br></br>
+
+        
+        <Typography variant="h6" textAlign={"left"}>
+          Mechanical Design
+        </Typography>
+        <Typography variant="body1" textAlign={"left"}>
+          Amphitrite’s frame is designed around stability, flexibility, durability, and versatility. Acrylic was used because of its lightweight, compact, and inexpensive material which allows for mass production. A 4-inch diameter PVC pipe was used as the main body to contain all the electrical components with 2 plates on both ends and 8 thread sticks to hold the submarine in position. The design creates greater stability and ability for the frame to absorb the shock in case of impact. Additionally, the design allows the team to easily place and rearrange sensors, cameras, thrusters, and other attachments if necessary.
+        </Typography>
+
+
         <br></br>
         <Typography variant="h6" textAlign={"left"}>
           Software & Electronics Stack
@@ -31,22 +43,11 @@ function Robot() {
         </Typography>
 
         <Typography variant="body1" textAlign={"left"}>
-          We are controlling the thrusters through BlueRobotics ESC controllers, and detecting the surroundings through cameras, ultrasound radar, IMU, and depth sensors.
+          We are controlling the thrusters through BlueRobotics ESC controllers, and detecting the surroundings through cameras, sonar, IMU, and depth sensors.
         </Typography>
 
         <Typography variant="body1" textAlign={"left"}>
-          The software team leverages Robotics Operating System to control the robot. We are looking for people with Computer Vision expertise and some experience with PID control.
-        </Typography>
-
-        <br></br>
-        <Typography variant="h6" textAlign={"left"}>
-          Mechanical Parts
-        </Typography>
-        <Typography variant="body1" textAlign={"left"}>
-          The robot is designed using SolidWorks and built mainly by xxx board through lazer cuttting and 3D printing. The main body is made of xxx tube. There are 6 BlueRobotics T200 thrusters maneuvering the robot.
-        </Typography>
-        <Typography variant="body1" textAlign={"left"}>
-          The sealing solution is still under development : 3
+          The software team leverages Robotics Operating System to control the robot. We are currently developing the Computer Vision and PID controller modules for the robot.
         </Typography>
       </div>
     </Container>
