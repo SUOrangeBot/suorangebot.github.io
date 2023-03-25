@@ -30,7 +30,14 @@ const router = createHashRouter([
         element: <Team />,
       },
       {
-        path: "Robot",
+        path: "Robots/:id",
+        element: <Robot />,
+        // loader: async () => {
+
+        // }
+      },
+      {
+        path: "Robots",
         element: <NewRobotPage />,
       },
       {

@@ -1,12 +1,11 @@
 import React from 'react';
 import { Container, Typography, Button } from '@mui/material';
 import robotImage from "./images/2022body.png";
+import { Link } from "react-router-dom";
 
 
 function Home () {
     return (
-
-        
         <div style={{
             height: "100%",
             backgroundImage: `url(${robotImage})`,
@@ -42,7 +41,8 @@ function Home () {
               <Button 
                 size="large"
                 variant='outlined'
-                // onClick={() => setPage('Apply')}
+                component={Link}
+                to={'/Apply'}
               >We are recruiting! Apply Here!</Button>
             </Container>
           </div>

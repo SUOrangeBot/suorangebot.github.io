@@ -15,7 +15,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import logo from "./logo2.png";
 
-const pages = ['Team', 'Robot', 'Apply'];
+const pages = ['Team', 'Robots', 'Apply'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = (props) => {
@@ -49,30 +49,35 @@ const ResponsiveAppBar = (props) => {
             onClick={() => props.setPage('Home')}
             // href={'Home'}
           >
-          <img
-            style={{
-              width: '40px',
-              height: '40px',
-            }}
-            src={logo}
-            alt={"OR"}
-            loading="lazy"
-          />
+          <Link
+            to={'/'}
+          >
+            <img
+              style={{
+                width: '40px',
+                height: '40px',
+              }}
+              src={logo}
+              alt={"OR"}
+              loading="lazy"
+            />
+          </Link>
           </IconButton>
           
           <Box sx={{ flexGrow: 1, display: { md: 'flex' } }}>
             <Typography variant="h6" noWrap
               onClick={() => props.setPage('Home')}
             >
-              <a 
+              <Link 
                 // href={'/Home/'}
                 style={{
                   textDecoration: 'none',
                   color: '#000e54',
                 }}
+                to={'/'}
               >
               Orange Robtics
-              </a>
+              </Link>
               
             </Typography>
           </Box>

@@ -1,10 +1,31 @@
 export const robots = [
     {
-      id: 1,
+        id: 1,
+        name: "Blitz",
+        year: "2023",
+        event: "VEXU",
+        image: require("../images/2023/Blitz_01.JPG"),
+        description: "Our 18-inch robot for the 2023 VEX Spin Up season.",
+        sections: [
+            {
+                title: "About the Robot",
+                content:
+                    "Blitz is our 18-inch robot for the 2023 VEX Spin Up season.",
+            },
+            {
+                title: "Features",
+                content:
+                "Blitz has a 4-wheel mecanum drive. It is capable of disc intake, human loading, roller and full field disc shooting. It also has a 3-wheel Odometry system and has tuned PID control for autonomous. A new end-game slingshot mechanism is currently under development.",
+            },
+        ],
+    },
+    {
+      id: 0,
       name: "Amphitrite",
       year: "2022",
       event: "RoboSub",
-      image: require("./images/body2.png"),
+      image: require("../images/body2.png"),
+      description: "A fully autonomous robot that is expected to submerge into the water and perform a variety of tasks.",
       sections: [
         {
           title: "About the Robot",
