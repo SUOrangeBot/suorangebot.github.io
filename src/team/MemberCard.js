@@ -27,6 +27,9 @@ const MemberCard = ({ member }) => {
             <Typography  variant="body2" color="text.secondary">
             {member.position}
             </Typography>
+            <Typography  variant="body2" color="text.secondary">
+            {member.subteam}
+            </Typography>
         </CardContent>
         {/* <CardActions>
             <Button size="small">Share</Button>

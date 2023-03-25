@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Outlet, Link } from "react-router-dom";
 
 import logo from "./logo2.png";
 
@@ -58,33 +59,6 @@ const ResponsiveAppBar = (props) => {
             loading="lazy"
           />
           </IconButton>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorElNav}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'left',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'left',
-            }}
-            open={Boolean(anchorElNav)}
-            onClose={handleCloseNavMenu}
-            sx={{
-              display: { xs: 'block', md: 'none' },
-            }}
-          >
-            {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center"
-                  onClick={() => props.setPage(page)}
-                  // href={page === 'Home' ? '/Home/' : `/Home/${page}`}
-                >{page}</Typography>
-              </MenuItem>
-            ))}
-          </Menu>
           
           <Box sx={{ flexGrow: 1, display: { md: 'flex' } }}>
             <Typography variant="h6" noWrap
@@ -105,19 +79,24 @@ const ResponsiveAppBar = (props) => {
 
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }}}>
             {pages.map((page) => (
-              <Button
-                variant='outlined'
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: 'block' }}
-                onClick={() => props.setPage(page)}
-                // href={page === 'Home' ? '/Home/' : `/Home/${page}`}
-                style={{
-                  margin: '0px 10px',
-                }}
-              >
-                {page}
-              </Button>
+
+              <Link to={page === 'Home' ? '/Home/' : `/${page}`} style={{
+                textDecoration: 'none',
+              }}>
+                <Button
+                  variant='outlined'
+                  key={page}
+                  // onClick={handleCloseNavMenu}
+                  sx={{ my: 2, display: 'block' }}
+                  onClick={() => props.setPage(page)}
+                  // href={page === 'Home' ? '/Home/' : `/Home/${page}`}
+                  style={{
+                    margin: '0px 10px',
+                  }}
+                >
+                  {page}
+                </Button>
+              </Link>
             ))}
           </Box>
 
