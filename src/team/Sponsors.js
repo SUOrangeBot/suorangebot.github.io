@@ -8,7 +8,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import sponsorImage01 from "../images/syr_eng-comp-science_full.svg";
 import sponsorImage02 from "../images/SYRACUSE_Horizontal_2Line_ORANGE_RGB.png";
 
-import ORTitle from '../components/ORTitle';
+import ORTitle from '../house-components/ORTitle';
 
 
 function Sponsors() {

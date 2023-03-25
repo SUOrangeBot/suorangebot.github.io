@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Outlet, Link } from "react-router-dom";
 
-import logo from "./logo2.png";
+import logo from "./images/logo2.png";
 
 const pages = ['Team', 'Robots', 'Apply'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

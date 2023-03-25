@@ -14,7 +14,7 @@ import RosterArchive from './RosterArchive';
 import MemberCard from './MemberCard';
 import Sponsors from './Sponsors';
 
-import ORTitle from '../components/ORTitle';
+import ORTitle from '../house-components/ORTitle';
 import { TEAM_2022_SUMMER, TEAM_2023_SPRING } from '../constants/teamInfo.js'
 
 function Team() {

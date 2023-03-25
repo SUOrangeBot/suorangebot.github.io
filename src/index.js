@@ -11,8 +11,8 @@ import {
 } from "react-router-dom";
 
 import Team from './team/Team';
-import Robot from './Robot';
-import NewRobotPage from './NewRobotPage';
+import RobotDetail from './robots/RobotDetail';
+import RobotGrid from './robots/RobotGrid';
 import Apply from './Apply';
 import Home from './Home';
 
@@ -31,14 +31,12 @@ const router = createHashRouter([
       },
       {
         path: "Robots/:id",
-        element: <Robot />,
-        // loader: async () => {
+        element: <RobotDetail />,
 
-        // }
       },
       {
         path: "Robots",
-        element: <NewRobotPage />,
+        element: <RobotGrid />,
       },
       {
         path: "Apply",
