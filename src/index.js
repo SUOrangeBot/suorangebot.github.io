@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -10,11 +10,12 @@ import {
   createHashRouter,
 } from "react-router-dom";
 
-import Team from './team/Team';
-import RobotDetail from './robots/RobotDetail';
-import RobotGrid from './robots/RobotGrid';
-import Apply from './Apply';
-import Home from './Home';
+import Team from './pages/team/Team';
+import RobotDetail from './pages/robots/RobotDetail';
+import RobotGrid from './pages/robots/RobotGrid';
+import Apply from './pages/Apply';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
 
 const router = createHashRouter([
   {
@@ -41,6 +42,10 @@ const router = createHashRouter([
       {
         path: "Apply",
         element: <Apply />,
+      },
+      {
+        path: "AboutUs",
+        element: <AboutUs />,
       },
     ]
   },
