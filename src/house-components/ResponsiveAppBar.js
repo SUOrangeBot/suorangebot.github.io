@@ -10,6 +10,10 @@ import { Link } from "react-router-dom";
 import { useTheme } from '@mui/material/styles';
 import { styled } from '@mui/system';
 import ORButton from './ORButton';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 import logo from "../images/logo2.png";
 
@@ -18,6 +22,24 @@ const pages = ['AboutUs', 'Team', 'Robots', 'Apply'];
 const ResponsiveAppBar = (props) => {
   
   const theme = useTheme();
+
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
 
   return (
     <AppBar
@@ -43,13 +65,47 @@ const ResponsiveAppBar = (props) => {
             </Link>
           </IconButton>
 
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: 'block', md: 'none' },
+            }}
+          >
+            {pages.map((page) => (
+              <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Link
+                  to={`/${page}`}
+                  style={{
+                    textDecoration: 'none',
+                    color: '#000e54',
+                  }}
+                >
+                  {/* <Typography textAlign="center">{page}</Typography> */}
+                  {page}
+                </Link>
+              </MenuItem>
+            ))}
+          </Menu>
+
           <Box sx={{ flexGrow: 1, display: { md: 'flex' } }}>
             <Typography variant="h6" noWrap onClick={() => props.setPage('Home')}>
               <Link
                 to={'/'}
                 style={{
                   textDecoration: 'none',
-                  color: '#000e54',
+                  color: 'black',
                 }}
               >
                 Orange Robotics
@@ -73,6 +129,20 @@ const ResponsiveAppBar = (props) => {
               </Link>
             ))}
           </Box>
+
+          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              // color=""
+            >
+              <MenuIcon />
+            </IconButton>
+          </Box>
+          
         </Toolbar>
       </Container>
     </AppBar>
