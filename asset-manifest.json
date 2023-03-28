@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.27fc1b5b.js",
+    "main.js": "/static/js/main.04d96977.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/Blitz_cropped.png": "/static/media/Blitz_cropped.57873a7dc2961eb6076f.png",
     "static/media/Amphitrite_01.JPG": "/static/media/Amphitrite_01.e8c7b2b816cab76d4f09.JPG",
@@ -13,11 +13,11 @@
     "static/media/syr_eng-comp-science_full.svg": "/static/media/syr_eng-comp-science_full.1dc9823ac933f2c2adfb72e4599fd00b.svg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.27fc1b5b.js.map": "/static/js/main.27fc1b5b.js.map",
+    "main.04d96977.js.map": "/static/js/main.04d96977.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.27fc1b5b.js"
+    "static/js/main.04d96977.js"
   ]
 }
