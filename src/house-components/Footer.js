@@ -23,7 +23,6 @@ const Footer = ({ page, ...otherProps }) => {
             Presented by <strong>Syracuse University Orange Robotics</strong>. Hosted on GitHub.
           </Typography>
           <Typography variant='body2' sx={{ mt: 1 }}>
-            Contact us through:
             <IconButton href="mailto:suorangerobotics@gmail.com" style={{ color: 'white', paddingTop: 0, paddingBottom: 0}}>
               <EmailIcon />
             </IconButton>

@@ -2,7 +2,7 @@ import * as React from 'react';
 import './styles/App.css';
 import ResponsiveAppBar from './house-components/ResponsiveAppBar';
 import Footer from './house-components/Footer';
-import InstagramFeed from './InstagramFeed';
+import InstagramFeed from './house-components/InstagramFeed';
 import { Button, Container, Link, Typography } from '@mui/material';
 import { createTheme, ThemeProvider, styled, responsiveFontSizes} from '@mui/material/styles';
 // import { ThemeProvider, createTheme, makeStyles, responsiveFontSizes} from '@material-ui/core/styles';
@@ -119,9 +119,15 @@ function App() {
           setPage={setPage}
         />
 
-        <Outlet></Outlet>
+        <Outlet
+          style={{
+            zIndex: 1
+          }}
+        ></Outlet>
 
-        <Footer page={page}/>
+        <Footer page={page} style={{
+          zIndex: 3
+        }} />
       </div>
 
       {/*  instagram feed stuff  */}
