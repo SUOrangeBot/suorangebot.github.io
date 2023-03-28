@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.instagram-widget {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  width: 328px;
+  height: 400px;
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+}
