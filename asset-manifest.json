@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.870ba801.css",
-    "main.js": "/static/js/main.ee6595ce.js",
+    "main.js": "/static/js/main.b626a302.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/landing_03.jpeg": "/static/media/landing_03.c2e231039311b4ef9005.jpeg",
     "static/media/Blitz_cropped.png": "/static/media/Blitz_cropped.57873a7dc2961eb6076f.png",
@@ -10,16 +10,16 @@
     "static/media/sa.png": "/static/media/sa.795474565b96f086a49b.png",
     "static/media/landing_01.jpeg": "/static/media/landing_01.11d8f9e9d7755f9b8d8a.jpeg",
     "static/media/body2.png": "/static/media/body2.bae449438742dca45bde.png",
-    "static/media/logo2.png": "/static/media/logo2.dc4db634b0e4b74e92c7.png",
+    "static/media/logo2.png": "/static/media/logo2.a38b32e716536135670c.png",
     "static/media/SYRACUSE_Horizontal_2Line_ORANGE_RGB.png": "/static/media/SYRACUSE_Horizontal_2Line_ORANGE_RGB.5e1271ae2aaf3a80992a.png",
     "static/media/syr_eng-comp-science_full.svg": "/static/media/syr_eng-comp-science_full.1dc9823ac933f2c2adfb72e4599fd00b.svg",
     "index.html": "/index.html",
     "main.870ba801.css.map": "/static/css/main.870ba801.css.map",
-    "main.ee6595ce.js.map": "/static/js/main.ee6595ce.js.map",
+    "main.b626a302.js.map": "/static/js/main.b626a302.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.870ba801.css",
-    "static/js/main.ee6595ce.js"
+    "static/js/main.b626a302.js"
   ]
 }
