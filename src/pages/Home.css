@@ -1,0 +1,14 @@
+
+.HomeTitle {
+  text-align: center;
+  /* font-family: 'BDColonius'; */
+  padding-top: 24vh;
+  z-index: 2;
+}
+
+.HomeSubtitle {
+  text-align: center;
+  /* font-family: 'BDColonius'; */
+  padding-bottom: 2vh;
+  z-index: 2;
+}

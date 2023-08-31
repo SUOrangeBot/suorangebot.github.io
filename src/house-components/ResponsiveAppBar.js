@@ -19,7 +19,16 @@ import './ResponsiveAppBar.css';
 
 import logo from "../images/logo2.png";
 
-const pages = ['AboutUs', 'Robots', 'Apply'];
+const pages = [{
+  name: 'About Us',
+  link: 'AboutUs',
+}, {
+  name: 'Robots',
+  link: 'Robots',
+}, {
+  name: 'Apply',
+  link: 'Apply',
+}];
 
 const ResponsiveAppBar = (props) => {
   
@@ -86,26 +95,35 @@ const ResponsiveAppBar = (props) => {
             }}
           >
             {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
+              <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                 <Link
-                  to={`/${page}`}
+                  to={`/${page.link}`}
                   style={{
                     textDecoration: 'none',
                     color: '#000e54',
                   }}
                 >
                   {/* <Typography textAlign="center">{page}</Typography> */}
-                  {page}
+                  {page.name}
                 </Link>
               </MenuItem>
             ))}
+            <MenuItem key={"Support Us"} onClick={handleCloseNavMenu}>
+              <Link
+              to={"https://secure.syr.edu/s/1632/17/form/form.aspx?sid=1632&gid=2&pgid=9326&sort=1&bledit=1&dids=1966&appealcode=408614OrangeRobotics&_gl=1*ynjyy0*_ga*MjA0NDc1OTUwMS4xNjkwOTgzNjg4*_ga_QT13NN6N9S*MTY5MzQ0Njg4MC45LjEuMTY5MzQ0Njg5NS40NS4wLjA."}
+              style={{
+                textDecoration: 'none',
+                color: '#000e54',
+              }}
+              target='_blank'
+              >
+                Support Us
+              </Link>
+            </MenuItem>
           </Menu>
 
           <Box sx={{ flexGrow: 1, display: { md: 'flex' } }}>
             <Typography variant="h6" noWrap onClick={() => props.setPage('Home')} 
-            style={{
-              fontFamily: 'BDColonius',
-            }}
             >
               <Link
                 to={'/'}
@@ -113,8 +131,9 @@ const ResponsiveAppBar = (props) => {
                   textDecoration: 'none',
                   color: 'black',
                 }}
+                className='AppBarTitle'
               >
-                Orange Robotics
+                ORANGE ROBOTICS
               </Link>
             </Typography>
           </Box>
@@ -122,13 +141,13 @@ const ResponsiveAppBar = (props) => {
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Link
-                to={`/${page}`}
+                to={`/${page.link}`}
                 style={{
                   textDecoration: 'none',
                 }}
               >
                 <ORButton
-                  page={page}
+                  page={page.name}
                   setPage={props.setPage}
                   highlighted={page === 'AboutUs'}
                 />

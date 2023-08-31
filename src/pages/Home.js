@@ -9,6 +9,7 @@ import { styled } from '@mui/system';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
+import './Home.css';
 
 const fadeImages2 = [
   robotImage02,
@@ -84,15 +85,22 @@ function Home() {
         <Typography
           variant="h1"
           style={{
-            textAlign: 'center',
-            paddingTop: '24vh',
-            paddingBottom: '2vh',
             color: theme.palette.primary.main,
             fontWeight: 'bold',
-            zIndex: 2, // set a higher value than the Container component
           }}
+          className='HomeTitle'
         >
-          Syracuse University Orange Robotics
+          Syracuse University
+        </Typography>
+        <Typography
+          variant="h1"
+          style={{
+            color: theme.palette.primary.main,
+            fontWeight: 'bold',
+          }}
+          className='HomeSubtitle'
+          >
+            Orange Robotics
         </Typography>
 
         {/* <Typography variant="h5"></Typography> */}
