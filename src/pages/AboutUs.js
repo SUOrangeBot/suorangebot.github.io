@@ -1,6 +1,8 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import * as React from "react";
 import ORHeading from "../house-components/ORHeading";
+import ORImage from "../house-components/ORImage";
+import teamImage from "../images/team.jpeg";
 import Sponsors from "./Sponsors";
 
 function AboutUs() {
@@ -12,16 +14,13 @@ function AboutUs() {
         </Grid>
 
         <Grid item xs={12}>
-          <Typography variant="h6">Who We Are</Typography>
-          <Typography variant="body1" sx={{ mt: 1, mb: 3, lineHeight: 1.6 }}>
-            Orange Robotics is a student-led engineering club at the School of Engineering and Computer Science at Syracuse University. Founded in 2016 by passionate undergraduate and graduate students, our mission is to expose students to the field of robotics by encouraging them to participate in the designing, building, and creating of robots. We promote creativity and inspire students to become technology leaders, and we push learning by competing in robotic competitions and engaging in collaborative-based projects.
-          </Typography>
+          <ORImage src={teamImage} />
         </Grid>
 
         <Grid item xs={12}>
-          <Typography variant="h6">Our Challenges</Typography>
+          <Typography variant="h6">Who We Are</Typography>
           <Typography variant="body1" sx={{ mt: 1, mb: 3, lineHeight: 1.6 }}>
-            As a Registered Student Organization (RSO) on campus, we receive a semester budget from the Student Association (SA) for materials only. However, this funding comes with restrictions and cannot be used for extra costs like learning materials, competition fees, or traveling expenses.
+            Orange Robotics is a student-led engineering club at the School of Engineering and Computer Science at Syracuse University. Founded in 2016 by passionate undergraduate and graduate students, our mission is to expose students to the field of robotics by encouraging them to participate in the designing, building, and creating of robots. We promote creativity and inspire students to become technology leaders, and we push learning by competing in robotic competitions and engaging in collaborative-based projects.
           </Typography>
         </Grid>
 

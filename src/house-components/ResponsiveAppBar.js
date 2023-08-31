@@ -14,10 +14,12 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import './ResponsiveAppBar.css';
+
 
 import logo from "../images/logo2.png";
 
-const pages = ['AboutUs', 'Team', 'Robots', 'Apply'];
+const pages = ['AboutUs', 'Robots', 'Apply'];
 
 const ResponsiveAppBar = (props) => {
   
@@ -100,7 +102,11 @@ const ResponsiveAppBar = (props) => {
           </Menu>
 
           <Box sx={{ flexGrow: 1, display: { md: 'flex' } }}>
-            <Typography variant="h6" noWrap onClick={() => props.setPage('Home')}>
+            <Typography variant="h6" noWrap onClick={() => props.setPage('Home')} 
+            style={{
+              fontFamily: 'BDColonius',
+            }}
+            >
               <Link
                 to={'/'}
                 style={{
@@ -128,6 +134,19 @@ const ResponsiveAppBar = (props) => {
                 />
               </Link>
             ))}
+
+              <Link
+                to={"https://secure.syr.edu/s/1632/17/form/form.aspx?sid=1632&gid=2&pgid=9326&sort=1&bledit=1&dids=1966&appealcode=408614OrangeRobotics&_gl=1*ynjyy0*_ga*MjA0NDc1OTUwMS4xNjkwOTgzNjg4*_ga_QT13NN6N9S*MTY5MzQ0Njg4MC45LjEuMTY5MzQ0Njg5NS40NS4wLjA."}
+                style={{
+                  textDecoration: 'none',
+                }}
+                target='_blank'
+              >
+                <ORButton
+                  page={"Support Us"}
+                  setPage={props.setPage}
+                />
+              </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>

@@ -12,17 +12,17 @@ function Apply() {
 
       <Paper sx={{ p: 4, mb: 4 }}>
         <Typography variant="body1" sx={{ mb: 2 }}>
-          Orange Robotics always welcomes new members on a rolling basis, we are glad to hear of your interest and would love to have you!
+          Orange Robotics will hold a recruitment event in the fall semester. If you are interested please fill out the form below. We will contact you when the recruitment details are finalized.
         </Typography>
 
         <Typography variant="body1" sx={{ mb: 2 }}>
-          At the moment, experience with CAD modeling, VEX/FRC/FTC, fund raising, media management designing is a plus. (2023 April)
+          At the moment, experience with CAD modeling, VEX/FRC/FTC, PID control, CV, fund raising, web dev is a plus. (2023 April)
         </Typography>
 
         <Button
           size="large"
           variant="outlined"
-          href="https://forms.gle/Z4e9B5PtzLVWGdLa6"
+          href="https://forms.gle/GZxWonnnCUA2RDSr9"
           target="_blank"
           sx={{ mb: 2 }}
         >
@@ -33,7 +33,7 @@ function Apply() {
       <Box sx={{ display: { xs: "none", md: "block" } }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={8}>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4h844jDOQCT2vChAbKgK0huAyrpUAbqEBCfu-ppVXLI7hoQ/viewform?embedded=true" width="640" height="982" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfde4ChxadMmU44ZoELE8RKPmxF4yDFpiF0ImGXs9XjsuR1Q/viewform?embedded=true" width="640" height="1888" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </Grid>
         </Grid>
       </Box>

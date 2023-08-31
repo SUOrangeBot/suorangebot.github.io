@@ -3,13 +3,13 @@ import * as React from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub'; // Import GitHub icon
 
-const Footer = ({ page, ...otherProps }) => {
+const Footer = ({ ...otherProps }) => {
   return (
     <footer className="footer" style={{
       backgroundColor: '#000e54',
       color: 'white',
-      // position: page === 'Home' ? 'fixed' : 'relative',
       left: 0,
       bottom: 0,
       width: '100wh',
@@ -31,6 +31,10 @@ const Footer = ({ page, ...otherProps }) => {
             </IconButton>
             <IconButton href="https://www.facebook.com/OrangeRobotics/" target="_blank" style={{ color: 'white', paddingTop: 0, paddingBottom: 0}}>
               <FacebookIcon />
+            </IconButton>
+            {/* Add new IconButton with GitHub icon */}
+            <IconButton href="https://github.com/su-orange-robotics" target="_blank" style={{ color: 'white', paddingTop: 0, paddingBottom: 0 }}>
+              <GitHubIcon />
             </IconButton>
           </Typography>
         </div>

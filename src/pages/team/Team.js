@@ -13,14 +13,13 @@ function Team() {
     <Container maxWidth="md">
       <ORHeading headingSize="h1">Our Team</ORHeading>
       <p>
-        In the 2023 season, the Orange Robotics team competes at the VEXU competition.
-        We will be attending the 2023 VEXU World Championship in Dallas, Texas.
-      </p>
-      <p>
-        Team meeting time: Friday 5PM-7PM
+        Team meeting time: Friday 5PM-8PM
       </p>
       <p>
         Location: Link Hall 023 (Basement)
+      </p>
+      <p>
+        In the 2023 season, Orange Robotics compted at the New York City and RIT events, and was invited to the World Championship.
       </p>
       <p>
         In the 2022 season, the Orange Robotics team was competing at RoboNation's 

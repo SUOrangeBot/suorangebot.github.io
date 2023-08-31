@@ -48,3 +48,11 @@
   z-index: 1000;
   border-radius: 10px;
 }
+
+
+@font-face {
+  font-family: 'BDColonius';
+  src: url('../fonts/BD-Colonius.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

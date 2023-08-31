@@ -3,7 +3,7 @@ import { InstagramEmbed } from 'react-social-media-embed';
 
 const InstagramFeed = ({ isVisible, latestPostLink }) => {
 
-  latestPostLink = latestPostLink ? latestPostLink : 'https://www.instagram.com/p/CqUG8toOSRI/';
+  latestPostLink = latestPostLink ? latestPostLink : 'https://www.instagram.com/p/CsEcjHZL7yb/';
 
   return (
     <div className="instagram-widget" style={{ display: isVisible ? 'block' : 'none' }}>

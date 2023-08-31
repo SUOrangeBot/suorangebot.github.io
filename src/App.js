@@ -115,7 +115,6 @@ function App() {
         }}  
       >
         <ResponsiveAppBar
-          page={page}
           setPage={setPage}
         />
 
@@ -125,7 +124,7 @@ function App() {
           }}
         ></Outlet>
 
-        <Footer page={page} style={{
+        <Footer style={{
           zIndex: 3
         }} />
       </div>
